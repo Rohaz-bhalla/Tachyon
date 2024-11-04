@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <link rel="stylesheet" href="/css/rules.css">
+    <link rel="icon" type="image/x-icon" href="/images/esf.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<%- include('partials/header') %>
+<body>
+
+    <!-- Navbar for In-Page Navigation -->
+    <nav class="navbar my-navbar">
+        <a href="#i-am-engineer" class="nav-link">I Am Engineer</a>
+        <a href="#robo-war" class="nav-link">Robo War</a>
+        <a href="#smashers-league" class="nav-link">Smashers League</a>
+    </nav>
+
+    <div class="rules-container">
+        <!-- Section 1: Robo War -->
+        <div id="robo-war" class="card rules-card" data-aos="fade-up">
+            <h1>Robo Wars</h1>
+            <ol>
+                <li>Arena:
+                    <ul>
+                        <li>The arena size is 3x3 meters.</li>
+                        <li>Stay within the boundaries. Going out results in an immediate loss.</li>
+                    </ul>
+                </li>
+                <li>Robot Specialization:
+                    <ul>
+                        <li>Maximum weight: 6kg.</li>
+                        <li>Allowed weapons: spinning blades, hammers, rams. No fire or projectiles.</li>
+                        <li>Robots can be remote-controlled or autonomous.</li>
+                    </ul>
+                </li>
+                <li>Match Format:
+                    <ul>
+                        <li>Match duration: 4 minutes.</li>
+                        <li>Winning by knockout (disabling or pushing the opponent’s robot out).</li>
+                        <li>If no knockout, judges decide based on aggression, control, and damage.</li>
+                    </ul>
+                </li>
+                <li>Safety:
+                    <ul>
+                        <li>No touching robots during the match.</li>
+                    </ul>
+                </li>
+                <li>Fair Play:
+                    <ul>
+                        <li>No jamming or interfering with others’ controls.</li>
+                        <li>Respect your competitors and keep it fun.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Section 2: I Am Engineer -->
+        <div id="i-am-engineer" class="card rules-card" data-aos="fade-up">
+            <h1>I Am Engineer</h1>
+            <ol>
+                <li>Max 3 members per team.</li>
+                <li>One team per member per category.</li>
+                <li>Printed project report required.</li>
+                <li>Original projects only; plagiarism disqualifies.</li>
+                <li>Mention roles of each member.</li>
+                <li>10-min presentation, 5-min Q&A.</li>
+                <li>Judged on innovation, complexity, practicality, and presentation.</li>
+            </ol>
+            <h3>Categories</h3>
+            <ol>
+                <li>Software: Develop innovative software solutions.</li>
+                <li>Hardware: Build impactful electronic devices.</li>
+                <li>Integrated: Combine hardware and software.</li>
+            </ol>
+        </div>
+
+        <!-- Section 3: Smashers League -->
+        <div id="smashers-league" class="card rules-card" data-aos="fade-up">
+            <h1>Smashers League</h1>
+            <ol>
+                <li>The team must consist of 5 members: 2 girls and 3 boys.</li>
+                <li>Four = +4 runs, Six = +6 runs, Wicket = -4 runs, Wide/No Ball = +1 run, Out of marking = +2/-2.</li>
+                <li>Each innings will consist of 3 overs, with the 3rd over being the power over (double score).</li>
+                <li>In the 3rd over (power over), runs are doubled.</li>
+                <li>Special rules for bowling and batting based on gender and hand usage.</li>
+                <li>One tip one hand caught is out.</li>
+                <li>In case of a tie, a super over will be played with scoring.</li>
+                <li>Organizer reserves rights to modify rules.</li>
+                <li>Umpire's decision is final.</li>
+            </ol>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+
+    <!-- Include AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, offset: 100 });
+
+        // Smooth scrolling for in-page navigation
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

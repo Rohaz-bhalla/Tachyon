@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.landing-page {
+    height: 100vh;
+    background-image: url('/images/uit.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-page h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px; /* Add space between heading and button */
+}
+
+.landing-page button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.landing-page button:hover {
+    background-color: #0056b3;
+}
+
+#carouselExampleAutoplaying {
+    width: 100%; /* Slightly reduced width */
+    margin: 0 auto; /* Center the carousel */
+    padding-top: 10px; /* Padding for some spacing */
+    padding-bottom: 10px;
+}
+
+.carousel-inner {
+    max-height: 530px; /* Smaller max height for a more compact layout */
+    height: auto; /* Let the height adapt based on content */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.carousel-inner img {
+    width: 100%; /* Full width */
+    height: 100%; /* Adjusts with container */
+    object-fit: contain; /* Keeps the entire image visible */
+    border-radius: 8px; /* Optional rounded corners */
+    padding: 5px; /* Small padding for spacing */
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h4 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form button {
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+

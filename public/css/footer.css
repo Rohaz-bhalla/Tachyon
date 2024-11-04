@@ -1,0 +1,88 @@
+/* Footer-specific container to prevent interference with other elements */
+.footer-container {
+    width: 100%;
+    padding: 0;
+    background-color: #262626; /* Dark gray background for footer */
+    color: #f5f5f5;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-bottom: 1px solid #444; /* Optional subtle border */
+}
+
+.foot .logo {
+    font-size: 1.5em;
+    color: #f5f5f5;
+}
+
+.foot .icofonts i {
+    color: #f5f5f5;
+    font-size: 1.3em;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.foot2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 50px;
+    gap: 15px;
+    background-color: #333; /* Slightly lighter gray for contrast */
+    color: #f5f5f5;
+}
+
+.foot2 h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.foot2 p, .foot2 button {
+    color: #dcdcdc;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.foot2 button {
+    background-color: #333;
+    border: 1px solid #f5f5f5;
+    padding: 8px 15px;
+    color: #f5f5f5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.foot2 button:hover {
+    background-color: #444;
+    border-color: #ffffff;
+}
+
+.foot3 {
+    text-align: center;
+    padding: 15px;
+    background-color: #262626;
+    color: #dcdcdc;
+    font-size: 0.9em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .foot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foot2 div {
+        margin-bottom: 20px;
+    }
+}
