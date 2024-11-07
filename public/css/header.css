@@ -1,8 +1,37 @@
 #homenav{
-font-size: 17px;
-color: rgb(88, 82, 82);
-}
-
-#icn{
-    size: 20px;
-}
+    font-size: 17px;
+     color: rgb(88, 82, 82);
+    }
+    
+    #homenav:hover{
+        color: #87ceeb;
+    }
+    
+    
+    #brand{
+        color: black
+    }
+    
+    #brand:hover{
+        color: #87ceeb;
+    }
+    
+    /* #b4c8dc*/
+    #rules{
+        color:rgb(88, 82, 82);
+    }
+    #rules:hover{
+        color: #87ceeb;
+    }
+    #stalls{
+        color: rgb(88, 82, 82);
+    }
+    #stalls:hover{
+        color: #87ceeb;
+    }
+    #events{
+        color: rgb(88, 82, 82);
+    }
+    #events:hover{
+        color: #87ceeb;
+    }

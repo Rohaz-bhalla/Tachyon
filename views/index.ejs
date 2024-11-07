@@ -6,8 +6,48 @@
     <title>College Fest</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/x-icon" href="/images/esf.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha384-MiZDl6gALKo5uD/mnWSZzF/3z+O8JtwOAOtFhETUVlvDNlbBC2ck/q9iAsqIbmzC" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha384-pzCY1qIYCUQFwHlAd4HJxVAJe6LsO84GbxZOnAhRYP7V5G50FNz7D4qfO6V6h/y9" crossorigin="anonymous"></script>
+    </head>
+    <style>
+      body {
+        font-family: 'Georgia', serif;
+        color: #2d3e3a;
+        text-align: center;
+        background-color: #fafafa;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      
+      .welcome-text {
+        font-size: 2.2em;
+        font-weight: bold;
+        color: #2d3e3a;
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+    
+      .highlight {
+        color: #5a865a;
+        font-weight: bold;
+      }
+    
+      .divider {
+        width: 80px;
+        height: 3px;
+        background-color: #2d3e3a;
+        margin: 20px auto;
+        border-radius: 2px;
+      }
+    
+      .description {
+        font-size: 1.1em;
+        color: #2d3e3a;
+        margin-top: 10px;
+      }
 
-</head>
+    </style>
+
 <body>
     <div class="landing-page">
         <div class="overlay">
@@ -15,5 +55,30 @@
             <button onclick="window.location.href='/home'">Get Started</button>
         </div>
     </div>
+
+    <div data-aos="fade-in" data-aos-duration="1200">
+        <p class="welcome-text" data-aos="fade-down" data-aos-duration="1500">
+          <i>Welcome to the Electronics Fest Registration Portal!</i>
+        </p>
+        
+        <div class="divider" data-aos="fade-right" data-aos-duration="1800"></div>
+        
+        <p class="description" data-aos="fade-up" data-aos-duration="2000">
+          Embark on an exciting journey where <span class="highlight">innovation</span>, <span class="highlight">creativity</span>, and <span class="highlight">competition</span> await. Join us at the Electronics Department Fest — a space where tradition meets technology, designed to inspire and ignite passion among aspiring minds.
+        </p>
+        
+        <div class="divider" data-aos="fade-left" data-aos-duration="2200"></div>
+        
+        <p class="description" data-aos="fade-up" data-aos-duration="2400">
+          <strong>Register today</strong> to secure your place and stay connected with event updates, schedules, and exclusive announcements. This fest is a unique blend of knowledge and camaraderie — an experience not to be missed!
+        </p>
+      </div>
+      <%- include('partials/footer') %>
+      <!-- Initialize AOS -->
+      <script>
+        AOS.init();
+      </script>
+
+
 </body>
 </html>

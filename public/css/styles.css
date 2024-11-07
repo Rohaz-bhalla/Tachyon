@@ -22,8 +22,8 @@ body {
 
 .landing-page button {
     padding: 15px 30px;
-    background-color: #007bff;
-    color: white;
+    background-color: #DADBDD;
+    color: #b22222;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -31,7 +31,7 @@ body {
 }
 
 .landing-page button:hover {
-    background-color: #0056b3;
+    background-color: grey;
 }
 
 #carouselExampleAutoplaying {

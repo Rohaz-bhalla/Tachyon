@@ -16,4 +16,8 @@ router.get('/rules', (req, res) => {
     res.render('rules'); // This will render rules.ejs from the views folder
 });
 
+router.get('/stalls', (req, res) => {
+    res.render('stalls'); // This will render stalls.ejs from the views folder
+});
+
 module.exports = router;

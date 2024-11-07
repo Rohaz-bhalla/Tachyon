@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary" id="ontop">
         <div class="container-fluid">
           <a class="navbar-brand" href="/home"><img src="/images/esf.png" height="35px"></a>
-          <a class="navbar-brand" href="/home"><i>Tachyon 5.O</i></a>
+          <a class="navbar-brand" id="brand" href="/home"><i>Tachyon 5.O</i></a>
           <a class="navbar-brand" href="/home" id="homenav">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" id="icn">☰</span>
@@ -21,11 +21,16 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="/rules">Rules</a>
+                <a class="nav-link" id="rules" href="/rules">Rules</a>
               </li>
-              &nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;
+              <li class="nav-item">
+                <a class="nav-link" id="stalls" href="/stalls">Stalls</a>
+              </li>
+
+              &nbsp;&nbsp;&nbsp;
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="events" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Events
                 </a>
                 <ul class="dropdown-menu">
