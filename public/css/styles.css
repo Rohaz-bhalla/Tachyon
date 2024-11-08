@@ -95,3 +95,41 @@ form label, form input, form button {
 }
 
 
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* This ensures the entire width of the images is scrolled */
+    }
+}
+
+.sponsor {
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.sponsor-slide {
+    display: flex;
+    animation: 25s slide infinite linear;
+    justify-content: flex-start;
+}
+
+.sponsor-slide img {
+    height: 150px;
+    width: auto;
+    margin: 0 20px;
+    object-fit: contain;
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
